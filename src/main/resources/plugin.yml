@@ -1,0 +1,6 @@
+main: com.hitc.kvm.Main
+name: KVM
+version: 1.0
+api-version: 1.13
+author: Holes in the Code
+description: Kotlin Virtual Machine
