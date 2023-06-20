@@ -11,6 +11,7 @@ plugins {
 	id 'application'
 	id 'com.github.johnrengelman.shadow' version '5.2.0'
 	id 'org.jetbrains.kotlin.jvm' version '1.8.21'
+	id 'org.jetbrains.kotlin.plugin.serialization' version '1.8.21'
 }
 apply plugin: 'java'
 apply plugin: 'kotlin'
@@ -27,8 +28,10 @@ compileJava {
 }
 
 dependencies {
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
   	implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version")
 	implementation ("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT")
+	implementation ('org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0')
 }
 
 allprojects {
